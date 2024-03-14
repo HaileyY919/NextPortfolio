@@ -1,0 +1,100 @@
+.header {
+  color: black;
+  background-color: aliceblue;
+  flex-direction: row;
+  display: flex;
+  }
+  .body {
+    color: black;
+    background-color: aliceblue;
+    font-family: var(--font-DIN Alternate Bold);
+    word-spacing: normal;
+    }
+.h1 {
+text-align: center;
+font-family: var(--font-Brush-Script);
+}
+.h2 {
+  text-align: left;
+  padding-left: 20px;
+  font-family: var(--font-Brush-Script);
+}
+.h3 {
+  text-align: center;
+} 
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--font-Brush-Script);
+}
+.navUl {
+  padding: .5em 1em;
+  margin: .5em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  word-spacing: 3px;
+  font-size: x-large;
+  list-style-type: none;
+}
+.navLi{
+  list-style-type: none;
+  padding: 20px;
+}
+.logo {
+  float: left;
+  padding: 10px;
+}
+.MyPhoto {
+  float: right;
+  justify-items: flex-end;
+  padding: 30px;
+  margin-bottom: auto;
+  margin-right: 50px;
+}
+.graphics {
+  font-family: var(--font-Brush-Script);
+  display: flex;
+  justify-content: left;
+  white-space: nowrap;
+  align-items: center;
+  margin-left: 50px;
+  width: 450px
+}
+.graphics img {
+padding: 30px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.p {
+  padding-left: 20px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .skills {
+      flex-direction: row;
+  }
+}
+/* .Resume {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+} */
+/* header nav ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+} */
+
+
+
+
+
