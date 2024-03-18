@@ -1,18 +1,24 @@
 .header {
   color: black;
   background-color: aliceblue;
+  flex-direction: row;
+  display: flex;
   }
   .body {
     color: black;
     background-color: aliceblue;
+    font-family: var(--font-DIN Alternate Bold);
+    word-spacing: normal;
     }
 .h1 {
 text-align: center;
+font-family: var(--font-Brush-Script);
 }
-/* h2 {
+.h2 {
   text-align: left;
   padding-left: 20px;
-} */
+  font-family: var(--font-Brush-Script);
+}
 .h3 {
   text-align: center;
 } 
@@ -20,6 +26,7 @@ text-align: center;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  font-family: var(--font-Brush-Script);
 }
 .navUl {
   padding: .5em 1em;
@@ -29,10 +36,15 @@ text-align: center;
   flex-direction: row;
   word-spacing: 3px;
   font-size: x-large;
+  list-style-type: none;
 }
 .navLi{
   list-style-type: none;
   padding: 20px;
+}
+.logo {
+  float: left;
+  padding: 10px;
 }
 .MyPhoto {
   float: right;
@@ -42,7 +54,7 @@ text-align: center;
   margin-right: 50px;
 }
 .graphics {
-  font-family: "Brush Script", 'Arial Narrow', Arial, sans-serif;
+  font-family: var(--font-Brush-Script);
   display: flex;
   justify-content: left;
   white-space: nowrap;
