@@ -14,35 +14,55 @@ const Portfolio = () => {
           <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="100px" /></a>
           <li className={styles.navLi}><a href="/">About Me</a></li>
           <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
+          <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
+          <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
+          <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
           <li className={styles.navLi}><a href="/Contact">Contact</a></li>
         </ul>
       </nav>
     </div><h1 className={styles.h1}>Portfolio</h1>
-    {/* <h2 className={styles.h2}>Logos</h2> */}
     <div className={styles.display}>
-      <Image className={styles.image}
+      <a href="/portfolio/MyBranding" className={styles.displayLink}>
+        <Image 
         src={BCMockup}
-        width={320}
-        height={300} 
-        alt={'BC'}    />
-      <a href="/portfolio/logos"><Image className={styles.image}
-        src={Skateboard}
-        width={250}
-        height={220} 
-        alt={'Skate'}    /></a>
-     <Image className={styles.image}
-        src={BookClub}
-        width={200}
-        height={300} 
-        alt={'Book'}    />
-      <Image className={styles.image}
-        src={Monogram}
-        width={250}
-        height={250} 
-        alt={'Monogram'}    />
+        width={420}
+        height={400} 
+        alt={'BC'}/>
+        <div className={styles.displayTitle}>
+          <h3>Personal Branding</h3>
         </div>
-    {/* <h2 className={styles.h2}>Posters</h2>
-    <h2 className={styles.h2}>Other Projects</h2> */}
+      </a>
+      <a href="/portfolio/logos" className={styles.displayLink}>
+        <Image 
+        src={Skateboard}
+        width={450}
+        height={420} 
+        alt={'Skate'}/>
+         <div className={styles.displayTitle}>
+          <h3>Logos</h3>
+        </div>
+        </a>
+     <a href="/portfolio/posters" className={styles.displayLink}>
+      <Image 
+        src={BookClub}
+        width={300}
+        height={470} 
+        alt={'Book'}/>
+         <div className={styles.displayTitle}>
+          <h3>Posters</h3>
+        </div>
+        </a>
+      <a href="/portfolio/OtherProjects" className={styles.displayLink}>
+        <Image 
+        src={Monogram}
+        width={450}
+        height={450} 
+        alt={'Monogram'}/>
+         <div className={styles.displayTitle}>
+          <h3>Other Design Projects</h3>
+        </div>
+        </a>
+        </div>
     </>
   );
 };

@@ -20,72 +20,39 @@ font-family: var(--font-Brush-Script);
   padding-left: 20px;
   font-family: var(--font-Brush-Script);
 }
-/* .h3 {
+.p {
   text-align: center;
-}  */
+  padding: 20px;
+}
 .nav {
   display: flex;
   flex-direction: column;
   font-family: var(--font-Brush-Script);
-  font-size: 30px;
+  font-size: x-large;
 }
 .navLi{
   list-style-type: none;
   margin-left: 20px;
   line-height: 30px;
 }
-.navLismall{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-  font-size: 22px;
-}
 .logo {
   float: left;
   padding: 10px;
 }
-.display {
+.bpackage {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
   justify-content: space-around;
 }
-
-.displayLink {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+.image {
+  padding: 10px;
 }
-
-.displayLink img {
-  margin: 0;
-  padding: 0;
-}
-
-.displayLink .displayTitle {
-  display: none;
-}
-
-.displayLink:hover .displayTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  opacity: 1;
-  background-color: rgba(255,255,255, 0.5)
-}
-
 @media(max-width:768px) {
-  .display{
+  .logos{
       flex-direction: column;
   }
 }

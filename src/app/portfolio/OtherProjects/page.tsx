@@ -2,11 +2,8 @@ import styles from './page.module.css';
 import React from 'react';
 import Image from 'next/image';
 import HaileysDesign from "@/assets/MyBranding/HaileysDesign.png";
-import Skateboard from "@/assets/Skateboard.png";
-import DiscGolf from "@/assets/DiscGolf.png";
-import StrategicIllusions from "@/assets/StrategicIllusions.png";
-import Tortoise from "@/assets/Tortoise.png";
-import Pawtential from "@/assets/Pawtential.png";
+import Monogram from "@/assets/Monogram.png";
+
 
 const Portfolio = () => {
   return (
@@ -22,14 +19,14 @@ const Portfolio = () => {
           <li className={styles.navLi}><a href="/Contact">Contact</a></li>
         </ul>
       </nav>
-    </div><h1 className={styles.h1}>Logos</h1>
+    </div><h1 className={styles.h1}>Other Projects</h1>
     <div className={styles.logos}>
       <Image className={styles.image}
-        src={Skateboard}
+        src={Monogram}
         width={250}
-        height={220} 
-        alt={'Skate'}    />
-      <Image className={styles.image}
+        height={250} 
+        alt={'Monogram'}    />
+      {/* <Image className={styles.image}
         src={DiscGolf}
         width={270}
         height={190} 
@@ -48,7 +45,7 @@ const Portfolio = () => {
         src={Pawtential}
         width={355}
         height={80} 
-        alt={'Paw'}    />
+        alt={'Paw'}    /> */}
         </div>
     </>
   );
