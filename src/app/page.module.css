@@ -28,7 +28,7 @@ font-family: var(--font-Brush-Script);
   display: flex;
   flex-direction: column;
   font-family: var(--font-Brush-Script);
-  font-size: x-large;
+  font-size: 30px;
 }
 .navLi{
   list-style-type: none;

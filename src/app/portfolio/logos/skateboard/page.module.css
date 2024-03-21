@@ -47,3 +47,8 @@ font-family: var(--font-Brush-Script);
   justify-content: center;
   padding: 20px;
 }
+.p {
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px
+}
