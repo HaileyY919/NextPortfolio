@@ -21,8 +21,8 @@ const Home = () => {
         </div>
         <h3 className={styles.h3}>What I Do</h3>
         <div className={styles.skills}>
-          <div className={styles.graphics}><h2 className={styles.h2}>Graphic Design</h2><a href="/Projects"><img src="GDicon.png" alt="Icon" width="254px" height="214px" /></a></div>
-          <div className={styles.graphics}><a href="/Projects"><img src="Camera.png" alt="Camera" width="200px" height="180px" /></a><h2 className={styles.h2}>Photography</h2></div>
+          <div className={styles.graphics}><h2 className={styles.h2}>Graphic Design</h2><a href="/portfolio"><img src="GDicon.png" alt="Icon" width="254px" height="214px" /></a></div>
+          <div className={styles.graphics}><a href="/portfolio"><img src="Camera.png" alt="Camera" width="200px" height="180px" /></a><h2 className={styles.h2}>Photography</h2></div>
         </div>
       </div></>
   );

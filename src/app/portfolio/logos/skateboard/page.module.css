@@ -20,10 +20,6 @@ font-family: var(--font-Brush-Script);
   padding-left: 20px;
   font-family: var(--font-Brush-Script);
 }
-.p {
-  text-align: center;
-  padding: 20px;
-}
 .nav {
   display: flex;
   flex-direction: column;
@@ -45,20 +41,9 @@ font-family: var(--font-Brush-Script);
   float: left;
   padding: 10px;
 }
-.bpackage {
+.image {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  justify-content: space-around;
-}
-.image {
-  padding: 10px;
-}
-@media(max-width:768px) {
-  .logos{
-      flex-direction: column;
-  }
+  padding: 20px;
 }
