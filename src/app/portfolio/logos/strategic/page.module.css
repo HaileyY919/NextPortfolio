@@ -45,5 +45,24 @@ font-family: var(--font-Brush-Script);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding-bottom: 20px;
 }
+.p {
+  text-align: left;
+  margin:40px
+}
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  @media(max-width:768px) {
+    .display{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }

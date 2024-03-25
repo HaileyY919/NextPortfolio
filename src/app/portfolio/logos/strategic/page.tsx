@@ -3,8 +3,16 @@ import React from 'react';
 import Image from 'next/image';
 import HaileysDesign from "@/assets/MyBranding/HaileysDesign.png";
 import StrategicIllusions from "@/assets/StrategicIllusions.png";
-const Portfolio = () => {
-  return (
+import BusinessCard from "@/assets/OnePage/BussinessCard.png";
+import Logos from "@/assets/OnePage/Logos.png";
+import Store from "@/assets/OnePage/Store.png";
+import Ticket from "@/assets/OnePage/Ticket.png";
+import TYCard from "@/assets/OnePage/TYCard.png";
+import Hat from "@/assets/OnePage/Hat.png";
+import Letterhead from "@/assets/OnePage/Letterhead.png";
+import Envelope from "@/assets/OnePage/Envelope.png";
+const Portfolio = () => {  
+return (
     <><div className={styles.header}>
           <nav className={styles.nav}>
               <ul className={styles.navUl}>
@@ -20,11 +28,11 @@ const Portfolio = () => {
       </div>
       <h1 className={styles.h1}>Strategic Illusions Logo</h1>
       <div className={styles.image}>
-      <Image className={styles.image}
+      <Image
         src={StrategicIllusions}
         width={200}
         height={230} 
-        alt={'Hat'}/></div>
+        alt={'Golf'}/></div>
           </>
     );
 };

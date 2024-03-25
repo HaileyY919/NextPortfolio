@@ -3,6 +3,13 @@ import React from 'react';
 import Image from 'next/image';
 import HaileysDesign from "@/assets/MyBranding/HaileysDesign.png";
 import BookClub from "@/assets/Bookclub.png";
+import POL from "@/assets/POL.jpeg"
+import Travel from "@/assets/TravelPoster.png"
+import MolRep from "@/assets/MolecularReptile.png"
+import Explore from "@/assets/Explore.png"
+import FavType from "@/assets/Favoritetype.png"
+import ISAS from "@/assets/ISASPoster.jpg"
+import Gizmo from "@/assets/Gizmo.png"
 
 const Portfolio = () => {
   return (
