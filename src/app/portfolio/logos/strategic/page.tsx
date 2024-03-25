@@ -24,7 +24,7 @@ const Portfolio = () => {
         src={StrategicIllusions}
         width={200}
         height={230} 
-        alt={'Golf'}/></div>
+        alt={'Hat'}/></div>
           </>
     );
 };
