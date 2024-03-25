@@ -26,32 +26,87 @@ const Portfolio = () => {
         </ul>
       </nav>
     </div><h1 className={styles.h1}>Posters</h1>
-    <div className={styles.logos}>
+    <div className={styles.posters}>
+      <a href="/portfolio" className={styles.displayLink}>
       <Image className={styles.image}
         src={BookClub}
-        width={300}
-        height={470} 
-        alt={''}    />
-      {/* <Image className={styles.image}
-        src={}
-        width={270}
-        height={190} 
-        alt={'Golf'}    />
+        width={230}
+        height={330} 
+        alt={'Book'}    />
+        <div className={styles.displayTitle}>
+          <h3>Book Club</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
       <Image className={styles.image}
-        src={}
-        width={200}
-        height={230} 
-        alt={''}    />
+        src={POL}
+        width={230}
+        height={330} 
+        alt={'POL'}    />
+         <div className={styles.displayTitle}>
+          <h3>Poetry Out Loud</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
       <Image className={styles.image}
-        src={}
+        src={MolRep}
         width={250}
-        height={220} 
-        alt={'Tortoise'}    />
+        height={280} 
+        alt={'MolReptile'}    />
+       <div className={styles.displayTitle}>
+          <h3>Molecular Reptile</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
       <Image className={styles.image}
-        src={}
-        width={355}
-        height={80} 
-        alt={''}    /> */}
+        src={Travel}
+        width={280}
+        height={400} 
+        alt={'Travel'}    />
+       <div className={styles.displayTitle}>
+          <h3>Travel Poster</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
+      <Image className={styles.image}
+        src={Explore}
+        width={280}
+        height={400} 
+        alt={'Explore'}    />
+         <div className={styles.displayTitle}>
+          <h3>Explore Magazine Cover</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
+      <Image className={styles.image}
+        src={FavType}
+        width={280}
+        height={400} 
+        alt={'Type'}    />
+         <div className={styles.displayTitle}>
+          <h3>Favorite Type</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
+      <Image className={styles.image}
+        src={ISAS}
+        width={300}
+        height={200} 
+        alt={'ISAS'}    />
+         <div className={styles.displayTitle}>
+          <h3>Idaho Science and Aerospace Scholars</h3>
+        </div>
+      </a>
+      <a href="/portfolio" className={styles.displayLink}>
+      <Image className={styles.image}
+        src={Gizmo}
+        width={250}
+        height={280} 
+        alt={'Gizmo'}    />
+         <div className={styles.displayTitle}>
+          <h3>Gizmo and PTK</h3>
+        </div>
+      </a>
         </div>
     </>
   );

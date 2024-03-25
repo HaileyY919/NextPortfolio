@@ -51,18 +51,8 @@ font-family: var(--font-Brush-Script);
   justify-content: space-around;
 }
 .image {
-  padding: 10px;
+  padding-top: 20px;
 }
-.display {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  justify-content: space-around;
-}
-
 .displayLink {
   position: relative;
   margin: 0;
