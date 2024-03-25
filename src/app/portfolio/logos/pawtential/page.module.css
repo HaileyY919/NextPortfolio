@@ -45,5 +45,9 @@ font-family: var(--font-Brush-Script);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding-top: 10px;
+}
+.p {
+  text-align: left;
+  padding: 20px
 }

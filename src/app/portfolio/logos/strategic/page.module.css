@@ -45,11 +45,11 @@ font-family: var(--font-Brush-Script);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 20px;
+  padding-top: 10px;
 }
 .p {
   text-align: left;
-  margin:40px
+  padding: 20px
 }
 .display {
     display: flex;
@@ -58,7 +58,9 @@ font-family: var(--font-Brush-Script);
     justify-content: center;
     justify-content: space-evenly;
     justify-content: space-around;
-    padding: 20px;
+  }
+  .photo {
+    padding: 10px;
   }
   @media(max-width:768px) {
     .display{

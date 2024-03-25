@@ -25,6 +25,7 @@ const Portfolio = () => {
         width={250}
         height={220} 
         alt={'Tortoise'}/></div>
+      <p className={styles.p}>In this project, we chose any animal we wanted in order to create an animal mascot logo. I chose a Radiated Tortoise because I wanted to do an animal that was more unique. My family also owns 4 of these tortoises so I was able to take my own photos to use as reference.</p>
           </>
     );
 };

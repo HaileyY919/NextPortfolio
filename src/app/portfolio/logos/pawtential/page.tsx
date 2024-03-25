@@ -25,6 +25,8 @@ const Portfolio = () => {
         width={355}
         height={80} 
         alt={'Paw'}    /></div>
+          
+      <p className={styles.p}>I made this logo for my senior project. My senior project class took place online as an entrepreneurship class. We did the project in a group to make it easier to divide up the workload of making a business. Our business is called Pawtential. We are essentially a social media marketing agency for pet products. My group granted me the opportunity to create our logo after we decided our name and color scheme.</p>
           </>
     );
 };
