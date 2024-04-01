@@ -61,6 +61,7 @@ padding: 30px;
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .p {
   padding-left: 20px;
