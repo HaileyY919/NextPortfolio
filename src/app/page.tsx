@@ -5,7 +5,7 @@ const Home = () => {
       <><div className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="100px" /></a>
+          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
           <li className={styles.navLi}><a href="/">About Me</a></li>
           <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
           <li className={styles.navLi}><a href="/Contact">Contact</a></li>
@@ -15,7 +15,7 @@ const Home = () => {
         <div className={styles.aboutText}>
           <div className={styles.MyPhoto}><img src="Me.png" alt="Hailey" width="230px" height="300px" /></div>
           <h3 className={styles.h3}>How I got Started</h3>
-          <p className={styles.p}>Hi, my name is Hailey Young and I am graphic and web design student. When I began my high school career, I had no clue what I wanted to do after I graduated. That’s when I took my first photography class, which then led to me taking another and also enrolling in graphic design courses. During these courses, my teacher set us up with opportunities to work with local businesses and provide them with logos, brochures, business cards, etc. These meetings helped me realize that graphic design is something I enjoy and want to pursue.</p>
+          <p className={styles.p}>Hello and welcome to my Portfolio. My name is Hailey Young and I am graphic and web design student. When I began my high school career, I had no clue what I wanted to do after I graduated. That’s when I took my first photography class, which then led to me taking another and also enrolling in graphic design courses. During these courses, my teacher set us up with opportunities to work with local businesses and provide them with logos, brochures, business cards, etc. These meetings helped me realize that graphic design is something I enjoy and want to pursue.</p>
           <p className={styles.p}>I am now enrolled in North Idaho College’s Graphic and Web Design program where I have been working towards an Associate of Applied Science. The program has been an amazing experience where I have been given the chance to learn more of what the Adobe programs have to offer.</p>
           <p className={styles.p}>I have taken what I learned in my photography and graphic design classes with me into other areas of my life as well and used them to my creative advantage.</p>
         </div>

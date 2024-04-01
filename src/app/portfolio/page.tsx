@@ -11,7 +11,7 @@ const Portfolio = () => {
     <><div className={styles.header}>
       <nav className={styles.nav}>
         <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="100px" /></a>
+          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
           <li className={styles.navLi}><a href="/">About Me</a></li>
           <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
           <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
