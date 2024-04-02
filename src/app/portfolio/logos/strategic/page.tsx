@@ -34,7 +34,7 @@ return (
         height={230} 
         alt={'Golf'}/></div>
          <p className={styles.p}>This project logo was an experience to say the least. My teacher had us first draw out 99 pictogram images of whatever came to mind. Then we had to choose 9 of our favorite sketches to re-draw but larger. After drawing the 9, we had to pick 6, then combine those 6 into 3. With those 3 combined sketches, we got to pick our favorite that would be the final.</p> 
-      <p className={styles.p}>The final sketches I chose to combine were a magic hat and cards. I was lucky these two went together nicely to create essentially a magic logo. With that logo, I then got to create a fake business. Once I determined that my business would be a magic shop/theater, I was able to continue with the further areas of the assignment to create a business package.</p> 
+         <p className={styles.p2}>The final sketches I chose to combine were a magic hat and cards. I was lucky these two went together nicely to create essentially a magic logo. With that logo, I then got to create a fake business. Once I determined that my business would be a magic shop/theater, I was able to continue with the further areas of the assignment to create a business package.</p> 
       <div className={styles.display}>
       <Image className={styles.photo}
         src={BusinessCard}

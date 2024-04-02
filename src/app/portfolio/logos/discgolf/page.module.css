@@ -51,6 +51,11 @@ font-family: var(--font-Brush-Script);
   text-align: left;
   padding: 20px;
 }
+.p2 {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
 .imagegal {
   padding: 20px;
 }
