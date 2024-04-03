@@ -67,7 +67,7 @@ const Portfolio = () => {
       <a href="/portfolio/OtherProjects/GradCard" className={styles.displayLink}>
       <Image className={styles.image}
         src={GradCard}
-        width={240}
+        width={220}
         height={280} 
         alt={'Explore'}    />
          <div className={styles.displayTitle}>

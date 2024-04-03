@@ -20,58 +20,60 @@ font-family: var(--font-Brush-Script);
   padding-left: 20px;
   font-family: var(--font-Brush-Script);
 }
+.h3 {
+  text-align: center;
+  padding: 10px;
+} 
 .nav {
   display: flex;
   flex-direction: column;
   font-family: var(--font-Brush-Script);
-  font-size: x-large;
+  font-size: 30px;
 }
 .navLi{
   list-style-type: none;
   margin-left: 20px;
   line-height: 30px;
 }
-.navLismall{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-  font-size: 22px;
-}
 .logo {
   float: left;
   padding: 10px;
 }
-.image {
+.MyPhoto {
+  float: right;
+  justify-items: flex-end;
+  padding: 30px;
+  margin-bottom: auto;
+  margin-right: 50px;
+}
+.graphics {
+  font-family: var(--font-Brush-Script);
   display: flex;
-  flex-direction: row;
+  justify-content: left;
+  white-space: nowrap;
+  align-items: center;
+  margin-left: 50px;
+  width: 450px
+}
+.graphics img {
+padding: 30px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
 }
 .p {
-  text-align: left;
-  padding: 20px;
-}
-.p2 {
-  text-align: left;
   padding-left: 20px;
-  padding-bottom: 10px;
-}
-.imagegal {
-  padding: 20px;
-}
-.displaygal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  justify-content: space-around;
 }
-.additionalimage {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 20px;
+
+@media (min-width: 768px) {
+  .skills {
+      flex-direction: row;
+  }
 }
+
+
+
+
