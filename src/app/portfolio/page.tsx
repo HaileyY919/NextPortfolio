@@ -12,7 +12,7 @@ const Portfolio = () => {
     <>
     <Header />
     <div className={styles.body}>
-    <main>
+      <main>
     <h1 className={styles.h1}>Portfolio</h1>
     <div className={styles.display}>
       <a href="/portfolio/MyBranding" className={styles.displayLink}>
@@ -57,7 +57,7 @@ const Portfolio = () => {
         </a>
         </div>
         </main>
-        </div>
+      </div>
     </>
   );
 };

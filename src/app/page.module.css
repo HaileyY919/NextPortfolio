@@ -3,8 +3,6 @@
   flex-direction: row;
   display: flex;
   }
-
-
   .body {
     color: black;
     font-family: var(--font-DIN Alternate Bold);
@@ -13,12 +11,11 @@
     display: flex;
     flex-direction: column;
     }
-
-    .body main {
+  .body main {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-    }
+  }
 
 .aboutText {
   max-width: 100%;
@@ -27,6 +24,7 @@
 .h1 {
 text-align: center;
 padding: 10px;
+margin-top: 30px;
 font-family: var(--font-Brush-Script);
 }
 .h2 {
@@ -47,6 +45,20 @@ font-family: var(--font-Brush-Script);
   width: 100%;
 }
 
+.navSubOpen {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.navSubOpen li {
+  list-style: none;
+}
+
+.navSubClose {
+  display: none;
+}
+
 .mobileNav {
   display: flex;
   position: absolute;
@@ -62,6 +74,7 @@ font-family: var(--font-Brush-Script);
 }
 
 .hamBtn {
+  background-color: purple;
   display: flex;
   padding: 5px 10px;
   height: 40px;
@@ -69,9 +82,9 @@ font-family: var(--font-Brush-Script);
   text-align: center;
 }
 .closeBtn {
+  background-color: purple;
   display: flex;
   padding: 10px;
-  text-align: center;
 }
 .navUl {
   display: none;
@@ -103,7 +116,7 @@ font-family: var(--font-Brush-Script);
   width: 450px
 }
 .graphics img {
-padding: 30px;
+padding: 20px;
 }
 .skills {
   display: flex;
@@ -135,18 +148,19 @@ padding: 30px;
   .hamBtn {
     display: none;
   }
-
   
   .navUl {
     display: flex;
     flex-direction: column;
   }
-
-  .skills {
-      flex-direction: row;
-  }
 }
 
 
+@media (min-width: 1190px) {
+  .skills {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
 
 

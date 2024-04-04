@@ -9,18 +9,14 @@ import FB from '@/assets/Icons/Facebook.png';
 import Linkdin from '@/assets/Icons/Link.png';
 import Email from '@/assets/Icons/Email.png';
 import Phone from '@/assets/Icons/Phone.png';
+import Header from '@/components/global/Header';
 const Home = () => {
   return (
-      <><div className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
-          <li className={styles.navLi}><a href="/">About Me</a></li>
-          <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-          <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div><h1 className={styles.h1}>Contact Info and Resume</h1><div className={styles.body}>
+      <>
+      <Header />
+    <div className={styles.body}>
+      <main>
+    <h1 className={styles.h1}>Contact Info and Resume</h1><div className={styles.body}>
     <h2 className={styles.h2}>Contact Me by:</h2>
     <p className={styles.p}>
     <a href="tel:2085189125">
@@ -56,7 +52,10 @@ const Home = () => {
         width={530}
         height={650} 
         alt={'BC'}></Image>
-      </div></>
+      </div>
+      </main>
+      </div>
+      </>
   );
 };
 export default Home;

@@ -2,10 +2,11 @@
 "use client";
 
 import styles from "@/app/page.module.css";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const Header = () => {
-
+    const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
     const openMenu = () => {
@@ -16,14 +17,22 @@ const Header = () => {
         setOpen(false);
     }
 
+    console.log(pathname);
+
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
+                <a className={styles.logo} href="/"><img src="/HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
                 <button className={styles.hamBtn} onClick={openMenu}>Menu</button>
                 <ul className={styles.navUl}>
                 <li className={styles.navLi}><a href="/">About Me</a></li>
-                <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
+                <li className={styles.navLi}><a href="/portfolio">Portfolio</a>
+                    <ul className={pathname.startsWith("/portfolio") ? styles.navSubOpen : styles.navSubClose}>
+                        <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
+                        <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
+                        <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
+                    </ul>
+                </li>
                 <li className={styles.navLi}><a href="/Contact">Contact</a></li>
                 </ul>
             </nav>
@@ -33,9 +42,15 @@ const Header = () => {
                 <button className={styles.closeBtn} onClick={closeMenu}>Close Menu</button>   
                 <ul className={styles.mobileNavUl}>
                     <li className={styles.navLi}><a href="/">About Me</a></li>
-                    <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-                    <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-                    </ul>
+                    <li className={styles.navLi}><a href="/portfolio">Portfolio</a>
+                        <ul className={pathname.startsWith("/portfolio") ? styles.navSubOpen : styles.navSubClose}>
+                            <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
+                            <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
+                            <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
+                        </ul>
+                    </li>
+                     <li className={styles.navLi}><a href="/Contact">Contact</a></li>
+                </ul>
                 </nav>
             ) : null}
            
