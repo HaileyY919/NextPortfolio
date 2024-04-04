@@ -4,18 +4,14 @@ import Image from 'next/image';
 import Insta from '@/assets/Icons/Insta.png';
 import FB from '@/assets/Icons/Facebook.png';
 import Linkdin from '@/assets/Icons/Link.png';
+import Header from '@/components/global/Header';
 const Home = () => {
   return (
-      <><div className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
-          <li className={styles.navLi}><a href="/">About Me</a></li>
-          <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-          <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div><h1 className={styles.h1}>Meet the Designer</h1><div className={styles.body}>
+      <>
+      <Header />
+    <div className={styles.body}>
+      <main>
+      <h1 className={styles.h1}>Meet the Designer</h1>
         <div className={styles.aboutText}>
           <div className={styles.MyPhoto}><img src="Me.png" alt="Hailey" width="230px" height="300px" /></div>
           <h3 className={styles.h3}>How I got Started</h3>
@@ -28,7 +24,7 @@ const Home = () => {
           <div className={styles.graphics}><h2 className={styles.h2}>Graphic Design</h2><a href="/portfolio"><img src="GDicon.png" alt="Icon" width="254px" height="214px" /></a></div>
           <div className={styles.graphics}><a href="/portfolio"><img src="Camera.png" alt="Camera" width="200px" height="180px" /></a><h2 className={styles.h2}>Photography</h2></div>
         </div>
-      </div>
+        </main>
       <footer className={styles.footer}>
       <h2 className={styles.h3}>Also Fine me On</h2>
       <div className={styles.icons}>
@@ -52,6 +48,7 @@ const Home = () => {
         height= {65}></Image></a>
         </div>
       </footer>
+      </div>
       </>
   );
 };

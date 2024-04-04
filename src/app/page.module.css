@@ -3,13 +3,27 @@
   flex-direction: row;
   display: flex;
   }
+
+
   .body {
     color: black;
-    margin-left: 80px;
     font-family: var(--font-DIN Alternate Bold);
     word-spacing: normal;
     line-height: 30px;
+    display: flex;
+    flex-direction: column;
     }
+
+    .body main {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+.aboutText {
+  max-width: 100%;
+  margin-right: 30px;
+}
 .h1 {
 text-align: center;
 padding: 10px;
@@ -24,13 +38,46 @@ font-family: var(--font-Brush-Script);
   text-align: center;
   padding: 10px;
 } 
-.nav {
+.nav, .mobileNav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: var(--font-Brush-Script);
   font-size: 30px;
+  justify-content: space-between;
+  width: 100%;
 }
-.navLi{
+
+.mobileNav {
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-left: 2px;
+}
+
+.hamBtn {
+  display: flex;
+  padding: 5px 10px;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+}
+.closeBtn {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+.navUl {
+  display: none;
+}
+
+.navLi {
   list-style-type: none;
   margin-left: 20px;
   line-height: 30px;
@@ -79,7 +126,22 @@ padding: 30px;
   background-color: lavenderblush;
   font-family: var(--font-Brush-Script);
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+  .nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .hamBtn {
+    display: none;
+  }
+
+  
+  .navUl {
+    display: flex;
+    flex-direction: column;
+  }
+
   .skills {
       flex-direction: row;
   }

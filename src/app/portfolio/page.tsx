@@ -5,22 +5,15 @@ import BCMockup from "@/assets/MyBranding/BCMockup.png";
 import Skateboard from "@/assets/Skateboard.png";
 import BookClub from "@/assets/Bookclub.png";
 import Monogram from "@/assets/Monogram.png";
+import Header from '@/components/global/Header';
 
 const Portfolio = () => {
   return (
-    <><div className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><img src="HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
-          <li className={styles.navLi}><a href="/">About Me</a></li>
-          <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
-          <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div><h1 className={styles.h1}>Portfolio</h1>
+    <>
+    <Header />
+    <div className={styles.body}>
+    <main>
+    <h1 className={styles.h1}>Portfolio</h1>
     <div className={styles.display}>
       <a href="/portfolio/MyBranding" className={styles.displayLink}>
         <Image 
@@ -62,6 +55,8 @@ const Portfolio = () => {
           <h3>Other Design Projects</h3>
         </div>
         </a>
+        </div>
+        </main>
         </div>
     </>
   );
