@@ -3,12 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Resumeg from '@/assets/Files/Resumegraphic.png';
-import Resume from '@/assets/Files/Resume.png'
-import Insta from '@/assets/Icons/Insta.png'
-import FB from '@/assets/Icons/Facebook.png'
-import Linkdin from '@/assets/Icons/Link.png'
-import Email from '@/assets/Icons/Email.png'
-import Phone from '@/assets/Icons/Phone.png'
+import Resume from '@/assets/Files/Resume.png';
+import Insta from '@/assets/Icons/Insta.png';
+import FB from '@/assets/Icons/Facebook.png';
+import Linkdin from '@/assets/Icons/Link.png';
+import Email from '@/assets/Icons/Email.png';
+import Phone from '@/assets/Icons/Phone.png';
 const Home = () => {
   return (
       <><div className={styles.header}>
