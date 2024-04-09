@@ -25,7 +25,7 @@ const Portfolio = () => {
         width={280}
         height={400} 
         alt={'POL'}    /></div>
-    <p className={styles.p}>In my typography class we were assigned a project where we had to make an entire poster only using type. On top of this, it had to be our "favorite typeface" and we could only use that singular typeface. I chose to do Clarendon after some research because I thought it would be fun to create a wanted poster, which Clarendon was commonly used for when it was first created by Robert Besley in 1845.</p>
+    <p className={styles.p}>In my typography class we were assigned a project where we had to make an entire poster only using type. On top of this, it had to be our &quot;favorite typeface&quot; and we could only use that singular typeface. I chose to do Clarendon after some research because I thought it would be fun to create a wanted poster, which Clarendon was commonly used for when it was first created by Robert Besley in 1845.</p>
   
         </>
     );

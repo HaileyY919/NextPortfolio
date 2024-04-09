@@ -2,6 +2,7 @@
 "use client";
 
 import styles from "@/app/page.module.css";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -22,7 +23,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <a className={styles.logo} href="/"><img src="/HaileysDesign.png" alt="Logo" width="250px" height="90px" /></a>
+                <a className={styles.logo} href="/"><Image src="/HaileysDesign.png" alt="Logo" width="250" height="90" /></a>
                 <button className={styles.hamBtn} onClick={openMenu}>Menu</button>
                 <ul className={styles.navUl}>
                 <li className={styles.navLi}><a href="/">About Me</a></li>

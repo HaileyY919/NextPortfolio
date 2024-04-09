@@ -25,7 +25,7 @@ const Portfolio = () => {
         width={280}
         height={400} 
         alt={'POL'}    /></div>
-    <p className={styles.p}>For an assignment we were given the opportunity to create a travel poster to anywhere we wanted, whether real or fictional. I chose to have my poster be of Thailand because my family has been talking about travelling there as is. I chose to create elements that the country is known for such as the Tuk-Tuk, elephant, historical monuments, and more. I chose to have the outline of the country's shape be the colors of their flag as a way to incorporate that somehow.</p>
+    <p className={styles.p}>For an assignment we were given the opportunity to create a travel poster to anywhere we wanted, whether real or fictional. I chose to have my poster be of Thailand because my family has been talking about travelling there as is. I chose to create elements that the country is known for such as the Tuk-Tuk, elephant, historical monuments, and more. I chose to have the outline of the country&lsquo;s shape be the colors of their flag as a way to incorporate that somehow.</p>
   
         </>
     );
