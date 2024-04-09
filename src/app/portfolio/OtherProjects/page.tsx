@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 import React from 'react';
 import Image from 'next/image';
-import HaileysDesign from "@/assets/MyBranding/HaileysDesign.png";
+import Header from '@/components/global/Header';
 import Monogram from "@/assets/Monogram.png";
 import Rosette from "@/assets/Recipe.png";
 import Explore from "@/assets/Explore.png";
@@ -10,19 +10,11 @@ import Album from "@/assets/albumcover.png";
 import Bird from "@/assets/Weekly Exercises/Bird.png";
 const Portfolio = () => {
   return (
-    <><div className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><Image src={HaileysDesign} width={250} height={90} alt={'Hailey'}/></a>
-          <li className={styles.navLi}><a href="/">About Me</a></li>
-          <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
-          <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div><h1 className={styles.h1}>Other Projects</h1>
+    <>
+    <Header />
+    <div className={styles.body}>
+    <main>
+    <h1 className={styles.h1}>Other Projects</h1>
     <div className={styles.projects}>
     <a href="/portfolio/OtherProjects/Monogram" className={styles.displayLink}>
       <Image className={styles.image}
@@ -85,7 +77,8 @@ const Portfolio = () => {
         </div>
       </a>
       </div>
-    
+    </main>
+    </div>
     </>
   );
 };

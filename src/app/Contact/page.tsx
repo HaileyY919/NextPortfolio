@@ -1,7 +1,6 @@
 import styles from './page.module.css';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Resumeg from '@/assets/Files/Resumegraphic.png';
 import Resume from '@/assets/Files/Resume.png';
 import Insta from '@/assets/Icons/Insta.png';

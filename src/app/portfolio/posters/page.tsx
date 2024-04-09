@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 import React from 'react';
 import Image from 'next/image';
-import HaileysDesign from "@/assets/MyBranding/HaileysDesign.png";
+import Header from '@/components/global/Header';
 import BookClub from "@/assets/Bookclub.png";
 import POL from "@/assets/POL.jpeg";
 import Travel from "@/assets/TravelPoster.png";
@@ -12,19 +12,11 @@ import Gizmo from "@/assets/Gizmo.png";
 
 const Portfolio = () => {
   return (
-    <><div className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.navUl}>
-          <a className={styles.logo} href="/"><Image src={HaileysDesign} width={250} height={90} alt={'Hailey'}/></a>
-          <li className={styles.navLi}><a href="/">About Me</a></li>
-          <li className={styles.navLi}><a href="/portfolio">Portfolio</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
-          <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
-          <li className={styles.navLi}><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div><h1 className={styles.h1}>Posters</h1>
+    <>
+    <Header />
+    <div className={styles.body}>
+    <main>
+    <h1 className={styles.h1}>Posters</h1>
     <div className={styles.posters}>
       <a href="/portfolio/posters/book-club" className={styles.displayLink}>
       <Image className={styles.image}
@@ -87,6 +79,8 @@ const Portfolio = () => {
         </div>
       </a>
         </div>
+    </main>
+    </div>
     </>
   );
 };
