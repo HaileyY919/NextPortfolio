@@ -40,7 +40,7 @@ const Home = () => {
     <a href="https://www.facebook.com/haileys.design.work" target="_blank">
     <Image className={styles.icons}
         src={FB}
-        alt={'BC'}></Image>Hailey's Design</a></p>
+        alt={'BC'}></Image>Hailey&lsquo;s Design</a></p>
     <p className={styles.p}>
     <a href="https://www.linkedin.com/in/hailey-young-a2460a283" target="_blank">
     <Image className={styles.icons}

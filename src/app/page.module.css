@@ -5,7 +5,7 @@
   }
   .body {
     color: black;
-    font-family: var(--font-DIN Alternate Bold);
+    font-family: var(--font-DIN-Alternate-Bold);
     word-spacing: normal;
     line-height: 30px;
     display: flex;
