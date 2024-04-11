@@ -9,15 +9,16 @@ import Linkdin from '@/assets/Icons/Link.png';
 import Email from '@/assets/Icons/Email.png';
 import Phone from '@/assets/Icons/Phone.png';
 import Header from '@/components/global/Header';
+import ContactForm from '@/components/global/ContactForm';
 const Home = () => {
   return (
       <>
       <Header />
     <div className={styles.body}>
-      <main>
-    <h1 className={styles.h1}>Contact Info and Resume</h1><div className={styles.body}>
-    <h2 className={styles.h2}>Contact Me by:</h2>
-    <p className={styles.p}>
+      <main className={styles.main}>
+    <h1 className={styles.h1}>Contact Me</h1><div className={styles.body}>
+    <ContactForm />
+    {/* <p className={styles.p}>
     <a href="tel:2085189125">
     <Image
         src={Phone}
@@ -50,7 +51,7 @@ const Home = () => {
         src={Resume}
         width={530}
         height={650} 
-        alt={'BC'}></Image>
+        alt={'BC'}></Image> */}
       </div>
       </main>
       </div>
