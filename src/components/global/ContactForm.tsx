@@ -1,93 +1,55 @@
-'use client'
+"use client";
+import { useState } from "react";
+import styles from "../Contactpage.module.css"
+import { Alert, Box, Button, TextField, TextareaAutosize } from "@mui/material";
 
-import { useState } from 'react';
-import styles from '../Contactpage.module.css';
+const ContactForm = () => {
+    const defaultSubmission = {
+        status: null,
+        message: null,
+    }
 
+    const [submission, setSubmission] = useState(defaultSubmission);
 
-function ContactForm() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form Data:', formData);
-        alert('Thank you for your message!');
-        setFormData({ name: '', email: '', message: '' });
-    };
+    const handleSubmit = async (formData: any) => {
+        console.log(formData);
+        let object: any = {};
+        formData.forEach((value: string, key: string) => object[key] = value);
+        await fetch('/contact/send', {
+            method: 'POST',
+            body: JSON.stringify(object),
+          })
+            .then((res) => res.json())
+            .then((res) => {
+              console.log("MY AWESOME RESPONSE", res);
+              setSubmission(res);
+            });
+    }
 
     return (
-        <form onSubmit={handleSubmit} className={styles.container}>
-            <div className={styles.formGroup}>
-                <label htmlFor="name" className={styles.label}>Name:</label>
-                <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    value={formData.name} 
-                    onChange={handleChange} 
-                    required 
-                    className={styles.input}
-                />
-            </div>
-            <div className={styles.formGroup}>
-                <label htmlFor="email" className={styles.label}>Email:</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    value={formData.email} 
-                    onChange={handleChange} 
-                    required 
-                    className={styles.input}
-                />
-            </div>
-            <div className={styles.formGroup}>
-                <label htmlFor="message" className={styles.label}>Message:</label>
-                <textarea 
-                    id="message" 
-                    name="message" 
-                    value={formData.message} 
-                    onChange={handleChange} 
-                    required 
-                    className={styles.textarea}
-                />
-            </div>
-            <div className={styles.formGroup}>
-                <button type="submit" className={styles.button}>Send Message</button>
-            </div>
-        </form>
+        <div>
+            {submission?.status ? (
+                <Alert variant="filled" severity={submission.status}>
+                    {submission.message}
+                </Alert>
+            ) : null}
+            
+            <form className={styles.contactForm} action={handleSubmit}>
+                <Box sx={{pb: {xs: 1, md: 1}}}>
+                    <TextField name="name" id="name-basic" color="primary" label="Name" variant="outlined" type="text" />
+                </Box>
+                <Box sx={{pb: {xs: 1, md: 1}}}>
+                    <TextField name="email" id="email-basic" label="Email" variant="outlined" type="email" />
+                </Box>
+                <Box sx={{pb: {xs: 1, md: 1}}}>
+                    <TextareaAutosize name="message" id="message" placeholder="Enter message here!" minRows={3} />
+                </Box>
+                <Button type="submit" variant="contained" color="secondary">Submit contact</Button>
+            </form>
+        </div>
         
     );
+
 }
-const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    const response = await fetch('/api/sendmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(FormData),
-    });
-  
-    if (response.ok) {
-      console.log('Form successfully submitted');
-      alert('Thank you for your message!');
-      setFormData({ name: '', email: '', message: '' });
-    } else {
-      console.error('Failed to send message');
-      alert('Failed to send message');
-    }
-  };
-  
+
 export default ContactForm;

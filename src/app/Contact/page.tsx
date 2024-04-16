@@ -13,11 +13,35 @@ import ContactForm from '@/components/global/ContactForm';
 const Home = () => {
   return (
       <>
+  <div className={styles.html}>
       <Header />
     <div className={styles.body}>
-      <main className={styles.main}>
+    <main className={styles.main}>
     <h1 className={styles.h1}>Contact Me</h1><div className={styles.body}>
     <ContactForm />
+    <footer className={styles.footer}>
+      <h2 className={styles.h3}>Also Fine me On</h2>
+      <div className={styles.icons}>
+      <a href="https://www.instagram.com/haileys_design_work/" target="_blank">
+      <Image className={styles.icon}
+        src={Insta}
+        alt={'BC'}
+        width= {65}
+        height= {60}></Image></a>
+    <a href="https://www.facebook.com/haileys.design.work" target="_blank">
+      <Image className={styles.icon}
+        src={FB}
+        alt={'BC'}
+        width= {65}
+        height= {60}></Image></a>
+    <a href="https://www.linkedin.com/in/hailey-young-a2460a283" target="_blank">
+      <Image className={styles.icon}
+        src={Linkdin}
+        alt={'BC'}
+        width= {65}
+        height= {65}></Image></a>
+        </div>
+      </footer>
     {/* <p className={styles.p}>
     <a href="tel:2085189125">
     <Image
@@ -55,6 +79,7 @@ const Home = () => {
       </div>
       </main>
       </div>
+  </div>
       </>
   );
 };

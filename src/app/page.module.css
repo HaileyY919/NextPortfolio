@@ -139,6 +139,7 @@ padding: 20px;
   background-color: #BA94CB;
   font-family: var(--font-Brush-Script);
 }
+
 @media (min-width: 600px) {
   .nav {
     flex-direction: column;
