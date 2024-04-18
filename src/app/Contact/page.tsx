@@ -13,12 +13,14 @@ import ContactForm from '@/components/global/ContactForm';
 const Home = () => {
   return (
       <>
-  <div className={styles.html}>
       <Header />
-    <div className={styles.body}>
+
     <main className={styles.main}>
     <h1 className={styles.h1}>Contact Me</h1><div className={styles.body}>
-    <ContactForm />
+      <div className={styles.contactWrapper}>
+      <ContactForm />
+      </div>
+  
     <footer className={styles.footer}>
       <h2 className={styles.h3}>Also Fine me On</h2>
       <div className={styles.icons}>
@@ -78,8 +80,6 @@ const Home = () => {
         alt={'BC'}></Image> */}
       </div>
       </main>
-      </div>
-  </div>
       </>
   );
 };

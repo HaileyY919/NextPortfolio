@@ -15,46 +15,46 @@ const Portfolio = () => {
       <main>
     <h1 className={styles.h1}>Portfolio</h1>
     <div className={styles.display}>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/MyBranding" className={styles.displayLink}>
-        <Image 
+        <Image className={styles.displayImage}
         src={BCMockup}
-        width={420}
-        height={400} 
-        alt={'BC'}/>
+        alt={'BC'} fill />
         <div className={styles.displayTitle}>
           <h3>Personal Branding</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/logos" className={styles.displayLink}>
-        <Image 
-        src={Skateboard}
-        width={450}
-        height={420} 
-        alt={'Skate'}/>
+        <Image className={styles.displayImage}
+        src={Skateboard} 
+        alt={'Skate'} fill/>
          <div className={styles.displayTitle}>
           <h3>Logos</h3>
         </div>
         </a>
+        </div>
+      <div className={styles.displayWrapper}>
      <a href="/portfolio/posters" className={styles.displayLink}>
-      <Image 
+      <Image className={styles.displayImage}
         src={BookClub}
-        width={300}
-        height={470} 
-        alt={'Book'}/>
+        alt={'Book'} fill/>
          <div className={styles.displayTitle}>
           <h3>Posters</h3>
         </div>
         </a>
+        </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/OtherProjects" className={styles.displayLink}>
-        <Image 
+        <Image className={styles.displayImage}
         src={Monogram}
-        width={450}
-        height={450} 
-        alt={'Monogram'}/>
+        alt={'Monogram'} fill />
          <div className={styles.displayTitle}>
           <h3>Other Design Projects</h3>
         </div>
         </a>
+        </div>
         </div>
         </main>
       </div>
