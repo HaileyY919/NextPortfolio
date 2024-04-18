@@ -33,17 +33,6 @@ font-family: var(--font-Brush-Script);
   width: 100%;
 }
 
-/* .displayLink {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.displayLink img {
-  margin: 0;
-  padding: 0;
-} */
-
 .displayLink .displayTitle {
   display: none;
 }

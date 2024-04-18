@@ -10,6 +10,11 @@
     word-spacing: normal;
     line-height: 30px;
     }
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .h1 {
 text-align: center;
 padding: 10px;
@@ -48,18 +53,35 @@ font-family: var(--font-Brush-Script);
 }
 .bpackage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  justify-content: space-around;
+  width: 100%;
 }
+
+.displayWrapper {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
 .image {
-  padding: 10px;
+  object-fit: contain;
+  margin: 0px;
+  padding: 20px;
 }
-@media(max-width:768px) {
-  .logos{
-      flex-direction: column;
+
+@media(min-width:768px) {
+  .bpackage {
+    flex-direction: row;
+    width: 100%;
+  }
+  .displayWrapper {
+    width: 400px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
