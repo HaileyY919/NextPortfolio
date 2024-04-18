@@ -12,63 +12,61 @@ const Portfolio = () => {
   return (
     <>
     <Header />
-    <div className={styles.body}>
-    <main>
+    <main className={styles.main}>
     <h1 className={styles.h1}>Logos</h1>
-    <div className={styles.logos}>
+    <div className={styles.display}>
+    <div className={styles.displayWrapper}>
       <a href="/portfolio/logos/skateboard" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image className={styles.displayImage}
         src={Skateboard}
-        width={250}
-        height={220} 
-        alt={'Skate'}    />
+        alt={'Skate'}   fill />
         <div className={styles.displayTitle}>
           <h3>Hobby Logo</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/logos/discgolf" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image className={styles.displayImage}
         src={DiscGolf}
-        width={270}
-        height={190} 
-        alt={'Golf'}    />
+        alt={'Golf'}   fill />
         <div className={styles.displayTitle}>
           <h3>Disc Golf Logo</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/logos/strategic" className={styles.displayLink}>
-      <Image className={styles.image}
-        src={StrategicIllusions}
-        width={200}
-        height={230} 
-        alt={'Golf'}    />
+      <Image className={styles.displayImage}
+        src={StrategicIllusions} 
+        alt={'Golf'}   fill />
         <div className={styles.displayTitle}>
           <h3>Strategic Illusions Logo</h3>
         </div>
         </a>
+        </div>
+        <div className={styles.displayWrapper}> 
       <a href="/portfolio/logos/tortoise" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image className={styles.displayImage}
         src={Tortoise}
-        width={250}
-        height={220} 
-        alt={'Tortoise'}    />
+        alt={'Tortoise'}   fill />
         <div className={styles.displayTitle}>
           <h3>Animal Mascot Logo</h3>
         </div>
         </a>
+        </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/logos/pawtential" className={styles.displayLink}>
-      <Image className={styles.image}
-        src={Pawtential}
-        width={355}
-        height={80} 
-        alt={'Paw'}    />
+      <Image className={styles.displayImage}
+        src={Pawtential} 
+        alt={'Paw'}   fill />
          <div className={styles.displayTitle}>
           <h3>Pawtential Logo</h3>
         </div>
         </a>
         </div>
-        </main>
         </div>
+        </main>
     </>
   );
 };
