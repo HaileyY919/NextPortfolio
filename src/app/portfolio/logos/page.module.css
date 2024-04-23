@@ -1,11 +1,3 @@
-.body {
-  color: black;
-  font-family: var(--font-DIN Alternate Bold);
-  word-spacing: normal;
-  line-height: 30px;
-  width: 100%;
-}
-
 .h1 {
 text-align: center;
 padding: 10px;

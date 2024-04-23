@@ -14,73 +14,71 @@ const Portfolio = () => {
   return (
     <>
     <Header />
-    <div className={styles.body}>
-    <main>
+    <main className={styles.main}>
     <h1 className={styles.h1}>Posters</h1>
-    <div className={styles.posters}>
+    <div className={styles.display}>
+    <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/book-club" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image  className={styles.displayImage}
         src={BookClub}
-        width={230}
-        height={330} 
-        alt={'Book'}    />
+        alt={'Book'}   fill />
         <div className={styles.displayTitle}>
           <h3>Book Club</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/POL" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image  className={styles.displayImage}
         src={POL}
-        width={230}
-        height={330} 
-        alt={'POL'}    />
+        alt={'POL'}   fill />
          <div className={styles.displayTitle}>
           <h3>Poetry Out Loud</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/MolRep" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image  className={styles.displayImage}
         src={MolRep}
-        width={240}
-        height={290} 
-        alt={'MolReptile'}    />
+        alt={'MolReptile'}   fill />
        <div className={styles.displayTitle}>
           <h3>Molecular Reptile</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/Thailand" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image  className={styles.displayImage}
         src={Travel}
-        width={280}
-        height={400} 
-        alt={'Travel'}    />
+        alt={'Travel'}  fill  />
        <div className={styles.displayTitle}>
           <h3>Travel Poster</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/FavType" className={styles.displayLink}>
-      <Image className={styles.image}
+      <Image  className={styles.displayImage}
         src={FavType}
-        width={280}
-        height={400} 
-        alt={'Type'}    />
+        alt={'Type'}   fill />
          <div className={styles.displayTitle}>
           <h3>Favorite Type</h3>
         </div>
       </a>
+      </div>
+      <div className={styles.displayWrapper}>
       <a href="/portfolio/posters/PTK" className={styles.displayLink}>
-      <Image className={styles.image}
-        src={Gizmo}
-        width={250}
-        height={280} 
-        alt={'Gizmo'}    />
+      <Image  className={styles.displayImage}
+        src={Gizmo} 
+        alt={'Gizmo'}   fill />
          <div className={styles.displayTitle}>
           <h3>Gizmo and PTK</h3>
         </div>
       </a>
-        </div>
+      </div>
+      </div>
     </main>
-    </div>
     </>
   );
 };

@@ -5,6 +5,7 @@
     line-height: 30px;
     display: flex;
     flex-direction: column;
+    background-color: white;
     }
   .body main {
       display: flex;
@@ -67,6 +68,7 @@ font-family: var(--font-Brush-Script);
   background-color: white;
   z-index: 1000;
   border-left: 2px;
+  color: #000;
 }
 
 .hamBtn {
@@ -106,10 +108,7 @@ font-family: var(--font-Brush-Script);
   font-family: var(--font-Brush-Script);
   display: flex;
   justify-content: left;
-  white-space: nowrap;
   align-items: center;
-  margin-left: 50px;
-  width: 450px
 }
 .graphics img {
 padding: 20px;
@@ -153,12 +152,17 @@ padding: 20px;
   }
 }
 
-
 @media (min-width: 1190px) {
   .skills {
       flex-direction: row;
       justify-content: center;
   }
 }
+
+
+
+
+
+
 
 

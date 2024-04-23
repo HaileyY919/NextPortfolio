@@ -1,74 +1,35 @@
-.header {
-  color: black;
-  flex-direction: row;
-  display: flex;
-  }
-  .body {
-    color: black;
-    margin-left: 80px;
-    font-family: var(--font-DIN Alternate Bold);
-    word-spacing: normal;
-    line-height: 30px;
-    }
 .h1 {
-text-align: center;
-padding: 10px;
-padding-top: 30px;
-font-family: var(--font-Brush-Script);
-}
-.h2 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  font-family: var(--font-Brush-Script);
+  }
+  
+  .h2 {
   text-align: left;
   padding-left: 20px;
   font-family: var(--font-Brush-Script);
-}
-.nav {
+  }
+  
+  .display {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-Brush-Script);
-  font-size: x-large;
-}
-.navLi{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-}
-.navLismall{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-  font-size: 22px;
-}
-.logo {
-  float: left;
-  padding: 10px;
-}
-.posters {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
-  justify-content: space-around;
-}
-.displayLink {
+  width: 100%;
+  }
+  
+  .displayWrapper {
   position: relative;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.displayLink img {
-  margin: 0;
-  padding: 0;
-}
-
-.displayLink .displayTitle {
+  height: 400px;
+  width: 100%;
+  }
+  
+  .displayLink .displayTitle {
   display: none;
-  text-align: center;
-}
-
-.displayLink:hover .displayTitle {
+  }
+  
+  .displayLink:hover .displayTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,9 +41,20 @@ font-family: var(--font-Brush-Script);
   z-index: 10;
   opacity: 1;
   background-color: rgba(255,255,255, 0.5)
-}
-@media(max-width:768px) {
-  .logos{
-      flex-direction: column;
   }
-}
+  
+  .displayImage {
+  object-fit: contain;
+  margin: 0px;
+  padding: 20px;
+  }
+  
+  @media(min-width:768px) {
+  .display {
+    flex-direction: row;
+  }
+  .displayWrapper {
+    width: 400px;
+  }
+  }
+  

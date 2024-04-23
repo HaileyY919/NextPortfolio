@@ -5,6 +5,7 @@ import BCMockup from "@/assets/MyBranding/BCMockup.png";
 import Skateboard from "@/assets/Skateboard.png";
 import BookClub from "@/assets/Bookclub.png";
 import Monogram from "@/assets/Monogram.png";
+import Sunset from "@/assets/Photography/sunset.jpg"
 import Header from '@/components/global/Header';
 
 const Portfolio = () => {
@@ -52,6 +53,16 @@ const Portfolio = () => {
         alt={'Monogram'} fill />
          <div className={styles.displayTitle}>
           <h3>Other Design Projects</h3>
+        </div>
+        </a>
+        </div>
+        <div className={styles.displayWrapper}>
+      <a href="/portfolio/photography" className={styles.displayLink}>
+        <Image className={styles.displayImage}
+        src={Sunset}
+        alt={'Monogram'} fill />
+         <div className={styles.displayTitle}>
+          <h3>Photography</h3>
         </div>
         </a>
         </div>

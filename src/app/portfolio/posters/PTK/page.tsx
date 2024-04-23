@@ -10,7 +10,7 @@ const Portfolio = () => {
     <Header />
     <div className={styles.body}>
     <main>
-      <h1 className={styles.h1}>PTK meets Gizmo Flyers</h1>
+      <h1 className={styles.h1}>PTK Flyers</h1>
       <div className={styles.image}>
       <Image className={styles.image}
         src={Gizmo}
