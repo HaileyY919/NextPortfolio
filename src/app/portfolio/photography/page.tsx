@@ -14,7 +14,7 @@ const Portfolio = () => {
     <h1 className={styles.h1}>Photography Work</h1>
     <div className={styles.display}>
     <div className={styles.displayWrapper}>
-    <a href="/portfolio/OtherProjects/" className={styles.displayLink}>
+    <a href="./photography/magician" className={styles.displayLink}>
       <Image className={styles.displayImage}
         src={Cecil} 
         alt={'Monogram'}  fill  />
@@ -24,7 +24,7 @@ const Portfolio = () => {
       </a>
       </div>
     <div className={styles.displayWrapper}>
-    <a href="/portfolio/OtherProjects/" className={styles.displayLink}>
+    <a href="./photography/meltz" className={styles.displayLink}>
       <Image className={styles.displayImage}
         src={Potsticker} 
         alt={'Monogram'}  fill  />
@@ -34,7 +34,7 @@ const Portfolio = () => {
       </a>
       </div>
     <div className={styles.displayWrapper}>
-    <a href="/portfolio/OtherProjects/" className={styles.displayLink}>
+    <a href="./photography/NISCA" className={styles.displayLink}>
       <Image className={styles.displayImage}
         src={Piano} 
         alt={'Monogram'}  fill  />
