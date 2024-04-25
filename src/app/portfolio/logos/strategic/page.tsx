@@ -15,53 +15,49 @@ const Portfolio = () => {
 return (
     <>
     <Header />
-    <div className={styles.body}>
-    <main>
+    <main className={styles.main}>
       <h1 className={styles.h1}>Strategic Illusions Logo</h1>
-      <div className={styles.image}>
-      <Image
+      <div className={styles.display}>
+      <div className={styles.displayWrapper}>
+      <Image className={styles.displayImage}
         src={StrategicIllusions}
-        width={200}
-        height={230} 
-        alt={'Golf'}/></div>
+        alt={'Golf'} fill/></div>
          <p className={styles.p}>This project logo was an experience to say the least. My teacher had us first draw out 99 pictogram images of whatever came to mind. Then we had to choose 9 of our favorite sketches to re-draw but larger. After drawing the 9, we had to pick 6, then combine those 6 into 3. With those 3 combined sketches, we got to pick our favorite that would be the final.</p> 
          <p className={styles.p2}>The final sketches I chose to combine were a magic hat and cards. I was lucky these two went together nicely to create essentially a magic logo. With that logo, I then got to create a fake business. Once I determined that my business would be a magic shop/theater, I was able to continue with the further areas of the assignment to create a business package.</p> 
-      <div className={styles.display}>
-      <Image className={styles.photo}
+      <div className={styles.displayWrapper}>
+      <Image className={styles.displayImage}
         src={BusinessCard}
-        alt="BC"
-        width={600}
-        height={300}/>
-      <Image className={styles.photo}
+        alt="BC" fill/></div>
+      <div className={styles.displayWrapper}>
+      <Image className={styles.displayImage}
         src={Logos}
-        alt="logos"
-        width={400}/>
-      <Image className={styles.photo}
+        alt="logos" fill/></div>
+      <div className={styles.displayWrapper}>
+      <Image className={styles.displayImage}
         src={Store}
-        alt="Store"
-        width={500}/>
-        <Image className={styles.photo}
+        alt="Store" fill/></div>
+      <div className={styles.displayWrapper}>
+        <Image className={styles.displayImage}
         src={Ticket}
-        alt="Ticket"/>
-        <Image className={styles.photo}
+        alt="Ticket" fill/></div>
+        <div className={styles.displayWrapper}>
+        <Image className={styles.displayImage}
         src={TYCard}
-        alt="TY"
-        width={300}/>
-        <Image className={styles.photo}
+        alt="TY" fill/></div>
+        <div className={styles.displayWrapper}>
+        <Image className={styles.displayImage}
         src={Hat}
-        alt="Hat"/>
-        <Image className={styles.photo}
+        alt="Hat"fill/></div>
+        <div className={styles.displayWrapper}>
+        <Image className={styles.displayImage}
         src={Letterhead}
-        alt="LH"
-        width={400}/>
-        <Image className={styles.photo}
+        alt="LH" fill/></div>
+        <div className={styles.displayWrapper}>
+        <Image className={styles.displayImage}
         src={Envelope}
-        alt="Envelope"
-        height={200}
-        width={500}/>
+        alt="Envelope" fill/></div>
       </div>
       </main>
-      </div>
           </>
     );
 };

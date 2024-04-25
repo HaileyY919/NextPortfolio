@@ -18,7 +18,7 @@ const Portfolio = () => {
         width={270}
         height={190} 
         alt={'Golf'}    /></div>
-    <p className={styles.p}>One of my friends' family owns a grilled cheese sandwich place called Meltz. They needed some photography work done and knew that I had the skillset, so they hired me to photograph the store, employees, and of course sandwiches.</p>
+    <p className={styles.p}>One of my friends&apos; family owns a grilled cheese sandwich place called Meltz. They needed some photography work done and knew that I had the skillset, so they hired me to photograph the store, employees, and of course sandwiches.</p>
     <div className={styles.displaygal}>
     <Image className={styles.imagegal}
         src={Sauce}
