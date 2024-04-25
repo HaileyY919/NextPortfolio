@@ -19,11 +19,12 @@ const Portfolio = () => {
         alt={'Explore'}    /></div>
     <p className={styles.p}>Since I was learning Adobe programs while being a dual credit high school senior, I decided to make my own graduation announcements. I wanted at least two photos of myself as well as graduation elements (cap and diploma). Then I decided to go with a black and gold theme for the background and the important text.</p>
     <p className={styles.p2}>I also designed my boyfriend, Landon&lsquo;s Graduation Card.</p>
-    <Image className={styles.additionalimage}
+    <div className={styles.additionalimage}>
+    <Image 
         src={LGrad}
         width={280}
         height={220} 
-        alt={'Explore'}    />
+        alt={'Explore'}    /></div>
     </main>
     </div>
     </>

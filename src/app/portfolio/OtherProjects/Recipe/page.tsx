@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Header from '@/components/global/Header';
 import Rosette from "@/assets/Recipe.png";
 import Card from "@/assets/RecipeCard.png";
+import Mockup from "@/assets/RecipeMockup.jpg"
 const Portfolio = () => {
   return (
     <>
@@ -18,12 +19,18 @@ const Portfolio = () => {
         height={320} 
         alt={'Golf'}    /></div>
     <p className={styles.p}>Rosette Cookies are a type of cookie my grandma and I always make around Christmas. This tradition prompted me to make her a nice recipe page that we can use. I knew she would love this and when I gave it to her, she was super excited, so I am glad I took the time to do that for her. The boarder is made up of cookies, and the other elements I made are used in making the cookies.</p>
-    <p className={styles.p2}>The second part to this, was to create a smaller recipe card that brings in supplies needed, and has simplified instructions.</p>
-    <Image className={styles.additionalimage}
+    <p className={styles.p2}>The second part to this, was to create a smaller recipe card that brings in supplies needed, and has simplified instructions I also created a mockup of what the recipe page would look like within a cook book.</p>
+    <div className={styles.additionalimage}>
+    <Image
         src={Card}
-        width={260}
-        height={200} 
+        width={360}
+        height={300} 
         alt={'Golf'}    />
+    <Image 
+        src={Mockup}
+        width={360}
+        height={300} 
+        alt={'Golf'}    /></div>
     </main>
     </div>
         </>

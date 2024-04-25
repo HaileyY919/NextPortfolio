@@ -7,7 +7,7 @@ import POL from "@/assets/POL.jpeg";
 import Travel from "@/assets/TravelPoster.png";
 import MolRep from "@/assets/MolecularReptile.png";
 import FavType from "@/assets/Favoritetype.png";
-// import ISAS from "@/assets/ISASPoster.jpg";
+import Quote from "@/assets/YouCanQuoteMe.png"
 import Gizmo from "@/assets/Gizmo.png";
 
 const Portfolio = () => {
@@ -64,6 +64,16 @@ const Portfolio = () => {
         alt={'Type'}   fill />
          <div className={styles.displayTitle}>
           <h3>Favorite Type</h3>
+        </div>
+      </a>
+      </div>
+      <div className={styles.displayWrapper}>
+      <a href="/portfolio/posters/quote" className={styles.displayLink}>
+      <Image  className={styles.displayImage}
+        src={Quote}
+        alt={'Type'}   fill />
+         <div className={styles.displayTitle}>
+          <h3>Design Quote</h3>
         </div>
       </a>
       </div>

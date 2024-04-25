@@ -8,6 +8,7 @@ import Explore from "@/assets/Explore.png";
 import GradCard from "@/assets/Graduation-Card.jpg";
 import Album from "@/assets/albumcover.png";
 import Bird from "@/assets/Weekly Exercises/Bird.png";
+import NYCard from "@/assets/NYCard_Mockup.png"
 const Portfolio = () => {
   return (
     <>
@@ -72,6 +73,16 @@ const Portfolio = () => {
         alt={'Explore'}   fill />
          <div className={styles.displayTitle}>
           <h3>Album Cover</h3>
+        </div>
+      </a>
+      </div>
+      <div className={styles.displayWrapper}>
+      <a href="/portfolio/OtherProjects/NYCard" className={styles.displayLink}>
+      <Image className={styles.displayImage}
+        src={NYCard}
+        alt={'Explore'}   fill />
+         <div className={styles.displayTitle}>
+          <h3>New Years Card</h3>
         </div>
       </a>
       </div>

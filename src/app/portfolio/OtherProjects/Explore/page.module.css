@@ -5,7 +5,6 @@
   }
   .body {
     color: black;
-    margin-left: 80px;
     font-family: var(--font-DIN Alternate Bold);
     word-spacing: normal;
     line-height: 30px;
@@ -21,33 +20,6 @@ font-family: var(--font-Brush-Script);
   padding-left: 20px;
   font-family: var(--font-Brush-Script);
 }
-.nav {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-Brush-Script);
-  font-size: x-large;
-}
-.navLi{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-}
-.navLismall{
-  list-style-type: none;
-  margin-left: 20px;
-  line-height: 30px;
-  font-size: 22px;
-}
-.logo {
-  float: left;
-  padding: 10px;
-}
-.image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 10px;
-}
 .p {
   text-align: left;
   padding: 20px;
@@ -57,8 +29,9 @@ font-family: var(--font-Brush-Script);
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.imagegal {
-  padding: 20px;
+.image {
+  display: flex;
+  justify-content: center;
 }
 .displaygal {
   display: flex;
@@ -72,6 +45,6 @@ font-family: var(--font-Brush-Script);
 .additionalimage {
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
-  padding-left: 20px;
+  justify-content: center;
+  padding: 10px;
 }

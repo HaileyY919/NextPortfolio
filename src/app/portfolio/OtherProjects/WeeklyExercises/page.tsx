@@ -22,22 +22,22 @@ const Portfolio = () => {
         alt={'Monogram'}    /></div>
     <p className={styles.p}>Every week in my Adobe Illustrator Class we had weekly exercises assignment with what we had to create that week. These were quick illustrations that were focussed on utilizing tools we learned that week. These are my favorites from the semester.</p>
    <div className={styles.additionalimage}>
-    <Image className={styles.additionalimage}
+    <Image 
         src={Butterfly}
         width={250}
         height={250} 
         alt={'Monogram'}    />
-        <Image className={styles.additionalimage}
+        <Image 
         src={Coffee}
         width={250}
         height={250} 
         alt={'Monogram'}    />
-        <Image className={styles.additionalimage}
+        <Image 
         src={Jelly}
         width={250}
         height={250} 
         alt={'Monogram'}    />
-        <Image className={styles.additionalimage}
+        <Image 
         src={Snow}
         width={250}
         height={250} 
