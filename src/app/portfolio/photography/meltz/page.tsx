@@ -12,30 +12,25 @@ const Portfolio = () => {
     <Header />
     <main className={styles.main}>
     <h1 className={styles.h1}>Meltz Grilled Cheese</h1>
-    <div className={styles.image}>
-      <Image className={styles.image}
+    <div className={styles.display}>
+    <div className={styles.displayWrapper}>
+      <Image className={styles.displayImage}
         src={Potsticker}
-        width={270}
-        height={190} 
-        alt={'Golf'}    /></div>
+        alt={'Golf'}   fill /></div>
     <p className={styles.p}>One of my friends&apos; family owns a grilled cheese sandwich place called Meltz. They needed some photography work done and knew that I had the skillset, so they hired me to photograph the store, employees, and of course sandwiches.</p>
-    <div className={styles.displaygal}>
-    <Image className={styles.imagegal}
-        src={Sauce}
-        width={370}
-        height={270} 
-        alt={'Basket'}    />
-    <Image className={styles.imagegal}
+    <div className={styles.displayWrapper}>
+    <Image className={styles.displayImage}
         src={Sandwhiches}
-        width={370}
-        height={270} 
-        alt={'Cuttree'}    />
-     <Image className={styles.imagegal}
+        alt={'Basket'}  fill  /></div>
+    <div className={styles.displayWrapper}>
+    <Image className={styles.displayImage}
+        src={Sauce}
+        alt={'Basket'}    fill/></div>
+    <div className={styles.displayWrapper}>
+    <Image className={styles.displayImage}
         src={Store}
-        width={370}
-        height={270} 
-        alt={'throw'}    /></div>
-   
+        alt={'Cuttree'}   fill /></div>
+    </div>
     </main>
     </>
   );

@@ -49,6 +49,7 @@ const Header = () => {
                             <li className={styles.navLismall}><a href="/portfolio/logos">Logos</a></li>
                             <li className={styles.navLismall}><a href="/portfolio/posters">Posters</a></li>
                             <li className={styles.navLismall}><a href="/portfolio/OtherProjects">Other Projetcs</a></li>
+                            <li className={styles.navLismall}><a href="/portfolio/photography">Photography</a></li>
                         </ul>
                     </li>
                      <li className={styles.navLi}><a href="/Contact">Contact</a></li>
