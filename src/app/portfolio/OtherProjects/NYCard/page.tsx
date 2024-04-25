@@ -19,16 +19,17 @@ const Portfolio = () => {
         height={280} 
         alt={'Explore'}    /></div>
     <p className={styles.p}>This New Years Card I made out of only type. The font I chose is called Balloon Dreams. I wanted to have the essence of the design revolve around celebrations, so I wanted balloons and fireworks. I also turned the 0 into a clock striking midnight. For the back of this card I used my logo as the stamp.</p>
-    <Image className={styles.additionalimage}
+    <div  className={styles.additionalimage}>
+    <Image
         src={Front}
         width={270}
         height={280} 
         alt={'Explore'}    />
-     <Image className={styles.additionalimage}
+     <Image 
         src={Back}
         width={290}
         height={220} 
-        alt={'Explore'}    />
+        alt={'Explore'}    /></div>
     </main>
     </div>
     </>
