@@ -3,13 +3,6 @@
   flex-direction: row;
   display: flex;
   }
-  .body {
-    color: black;
-    margin-left: 80px;
-    font-family: var(--font-DIN Alternate Bold);
-    word-spacing: normal;
-    line-height: 30px;
-    }
 .main {
   display: flex;
   flex-direction: row;

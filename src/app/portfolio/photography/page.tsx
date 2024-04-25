@@ -6,6 +6,7 @@ import Cecil from '@/assets/JobPhotos/Cecil.jpg';
 import Potsticker from '@/assets/JobPhotos/Potsticker.jpg';
 import Piano from '@/assets/JobPhotos/Piano.jpg';
 import Basket from '@/assets/JobPhotos/Basket.jpg';
+import Sunset from "@/assets/Photography/sunset.jpg"
 const Portfolio = () => {
   return (
     <>
@@ -43,7 +44,7 @@ const Portfolio = () => {
         </div>
       </a>
       </div>
-      <div className={styles.displayWrapper}>
+    <div className={styles.displayWrapper}>
     <a href="/portfolio/logos/discgolf" className={styles.displayLink}>
       <Image className={styles.displayImage}
         src={Basket} 
@@ -53,7 +54,16 @@ const Portfolio = () => {
         </div>
       </a>
       </div>
-
+    <div className={styles.displayWrapper}>
+    <a href="./photography/photos" className={styles.displayLink}>
+      <Image className={styles.displayImage}
+        src={Sunset} 
+        alt={'Monogram'}  fill  />
+         <div className={styles.displayTitle}>
+          <h3>Photos I am Proud of</h3>
+        </div>
+      </a>
+      </div>
       </div>
     </main>
     </>

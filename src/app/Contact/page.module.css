@@ -1,7 +1,6 @@
 .body {
     width: 100vh;
     color: black;
-    margin-left: 80px;
     font-family: var(--font-DIN Alternate Bold);
     word-spacing: normal;
     line-height: 30px;
@@ -39,26 +38,12 @@ font-family: var(--font-Brush-Script);
   flex-grow: 1;
   flex-direction: column;
   width: 300px;
+  align-items: center;
 }
 .footer {
   background-color: #D5BFE0;
   font-family: var(--font-Brush-Script);
   width: 100vw;
-}
-@media (min-width: 600px) {
-  .nav {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .hamBtn {
-    display: none;
-  }
-  
-  .navUl {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 

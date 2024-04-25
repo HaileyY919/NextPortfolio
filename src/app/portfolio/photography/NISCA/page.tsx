@@ -19,7 +19,7 @@ const Portfolio = () => {
     <h1 className={styles.h1}>North Idaho STEM Charter Academy Yearbook</h1>
     <div className={styles.display}>
     <div className={styles.displayWrapper}>
-      <Image className={styles.displayImage}
+    <Image className={styles.displayImage}
         src={Piano}
         alt={'Golf'}  fill  /></div>
     <p className={styles.p}>At my high school, North Idaho STEM Charter Academy, students were able to take photos and submit them to the yearbook. Over the years I chose to take and submit photos to build my portfolio in photography. I took photos of kids at recess, working on projects, participating in music class, and competing in challenges. Below are a few of mine that were published in the yearbooks.</p>
