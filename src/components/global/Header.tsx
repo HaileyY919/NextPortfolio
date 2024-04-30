@@ -35,7 +35,7 @@ const Header = () => {
                         <li className={styles.navLismall}><a href="/portfolio/photography">Photography</a></li>
                     </ul>
                 </li>
-                <li className={styles.navLi}><a href="/Contact">Contact</a></li>
+                <li className={styles.navLi}><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -52,7 +52,7 @@ const Header = () => {
                             <li className={styles.navLismall}><a href="/portfolio/photography">Photography</a></li>
                         </ul>
                     </li>
-                     <li className={styles.navLi}><a href="/Contact">Contact</a></li>
+                     <li className={styles.navLi}><a href="/contact">Contact</a></li>
                 </ul>
                 </nav>
             ) : null}
