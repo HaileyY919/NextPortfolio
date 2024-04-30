@@ -4,13 +4,19 @@
   display: flex;
   }
   .body {
-    color: black;
+    color: #FFF7EB;
+    background-color: #D5BFE0;
     font-family: var(--font-DIN Alternate Bold);
     word-spacing: normal;
     line-height: 30px;
     }
+.main {
+    color: #FFF7EB;
+    background-color: #D5BFE0;
+  }
 .h1 {
 text-align: center;
+color: black;
 padding: 10px;
 padding-top: 30px;
 font-family: var(--font-Brush-Script);
@@ -70,7 +76,6 @@ font-family: var(--font-Brush-Script);
 }
 .additionalimage {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   padding-top: 10px;
-  padding-left: 20px;
 }

@@ -11,19 +11,26 @@ const ContactForm = () => {
 
     const [submission, setSubmission] = useState(defaultSubmission);
 
-    const handleSubmit = async (formData: any) => {
-        console.log(formData);
-        let object: any = {};
-        formData.forEach((value: string, key: string) => object[key] = value);
+    const handleSubmit = async (e: any) => {
+        e.preventDefault();
+        const formData: { [key: string]: string } = {};
+        const elements = e.currentTarget.elements as unknown as Array<
+        HTMLInputElement | HTMLTextAreaElement | HTMLButtonElement
+        >;
+
+        Array.from(elements).forEach((field) => {
+        if (!field.name) return;
+        formData[field.name] = field.value;
+        });
+
         await fetch('/contact/send', {
-            method: 'POST',
-            body: JSON.stringify(object),
-          })
-            .then((res) => res.json())
-            .then((res) => {
-              console.log("MY AWESOME RESPONSE", res);
-              setSubmission(res);
-            });
+        method: 'POST',
+        body: JSON.stringify(formData),
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            console.log(res)
+        });
     }
 
     return (
@@ -34,7 +41,7 @@ const ContactForm = () => {
                 </Alert>
             ) : null}
             
-            <form className={styles.contactForm} action={handleSubmit}>
+            <form className={styles.contactForm} onSubmit={handleSubmit}>
                 <Box sx={{pb: {xs: 1, md: 1}}}>
                     <StyledTextField name="name" id="name-basic" color="primary" label="Name" variant="outlined" type="text" />
                 </Box>

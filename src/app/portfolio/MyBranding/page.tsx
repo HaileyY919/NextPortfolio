@@ -2,7 +2,7 @@ import styles from './page.module.css';
 import React from 'react';
 import Image from 'next/image';
 import Header from '@/components/global/Header';
-import BWlogo from "@/assets/MyBranding/Logos.png";
+import BWlogo from "@/assets/MyBranding/BW-Logo.png";
 import BCMockup from "@/assets/MyBranding/BCMockup.png";
 import Letterhead from "@/assets/MyBranding/Letterhead.png";
 import TYCard from "@/assets/MyBranding/TY Card.png";

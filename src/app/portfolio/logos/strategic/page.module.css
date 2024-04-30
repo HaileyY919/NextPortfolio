@@ -3,8 +3,11 @@
   padding: 10px;
   margin-top: 30px;
   font-family: var(--font-Brush-Script);
+  background-color: #D5BFE0;
   }
-  
+  .main {
+    background-color: #D5BFE0;
+  }
   .h2 {
   text-align: left;
   padding-left: 20px;
@@ -12,6 +15,8 @@
   }
   
   .display {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -23,6 +28,8 @@
   position: relative;
   height: 400px;
   width: 100%;
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   }
   
   .displayLink .displayTitle {
@@ -52,9 +59,13 @@
   @media(min-width:768px) {
   .display {
     flex-direction: row;
+    color: #FFF7EB;
+    background-color: #D5BFE0;
   }
   .displayWrapper {
     width: 400px;
+    color: #FFF7EB;
+    background-color: #D5BFE0;
   }
   }
   

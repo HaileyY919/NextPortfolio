@@ -1,43 +1,46 @@
-const nodemailer = require("nodemailer");
+import mail from '@sendgrid/mail';
 import { NextResponse } from 'next/server';
 
-const transporter = nodemailer.createTransport({
-  host: process.env.NODEMAILER_HOST || "smtp.gmail.com",
-  port: process.env.NODEMAILER_PORT || 465,
-  secure: process.env.NODEMAILER_SECURE || true, // Use `true` for port 465, `false` for all other ports
-  auth: {
-    user: process.env.NODEMAILER_USERNAME,
-    pass: process.env.NODEMAILER_PASSWORD,
-  },
-});
+// Create an api key in sendgrid and store someplace safe
+mail.setApiKey(process.env.SENDGRID_API_KEY || '');
 
 type ResponseData = {
-    status?: string;
-    message?: string;
+  status?: string;
+  message?: string;
 };
-  
+
 export async function POST(request: Request) {
-    try {
-        const body = await request.json();
-        console.log("SERVERS BODY", body);
-        // send mail with defined transport object
-        const info = await transporter.sendMail({
-            from: body.email, // sender address
-            to: "webdobe@gmail.com", // list of receivers
-            subject: `My Vercel Contact: ${body.name}`, // Subject line
-            text: body.message, // plain text body
-            html: `<b>${body.message}</b>`, // html body
-        });
-        return NextResponse.json({
-            status: "success",
-            message: "Thank you for contacting me, I will response ASAP."
-        });
-    } catch (error) {
-        console.log(error);
-        return NextResponse.json({
-            status: "error",
-            message: "Oops, something went wrong."
-        });
-    }
-    
+  let response: ResponseData = {};
+  const body = await request.json();
+  // I know the formData I sent in my request has name, email, and message fields so I'm just manually grabbing them to format a message
+  const message = `
+    Name: ${body.name}\r\n
+    Email: ${body.email}\r\n
+    Message: ${body.message}
+  `;
+  const data = {
+    to: 'haileyyoung919@gmail.com',
+    from: body.email,
+    subject: `Contact Message from ${body.name}`,
+    text: message,
+    html: message.replace(/\r\n/g, '<br>'),
+  };
+
+  // Send the data and create a response object. I'm using status and message to display a success or fail notification in the UI
+  await mail
+    .send(data)
+    .then(() => {
+      response = {
+        status: 'success',
+        message: "Your message was sent. I'll be in contact shortly.",
+      };
+    })
+    .catch((error) => {
+      response = {
+        status: 'error',
+        message: `Message failed to send with error, ${error}`,
+      };
+    });
+
+  return NextResponse.json(response);
 }

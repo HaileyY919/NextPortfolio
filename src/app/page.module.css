@@ -1,16 +1,17 @@
   .body {
-    color: black;
+    color: #FFF7EB;
     font-family: var(--font-DIN-Alternate-Bold);
     word-spacing: normal;
     line-height: 30px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #D5BFE0;
     }
   .body main {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      background-color: #D5BFE0;
   }
 
 .aboutText {
@@ -39,6 +40,7 @@ font-family: var(--font-Brush-Script);
   font-size: 30px;
   justify-content: space-between;
   width: 100%;
+  background-color: #D5BFE0;
 }
 
 .navSubOpen {
@@ -73,16 +75,18 @@ font-family: var(--font-Brush-Script);
 
 .hamBtn {
   background-color: #5A0084;
+  border-color: #5A0084;
   display: flex;
-  padding: 5px 10px;
+  padding: 10px 10px;
   height: 40px;
   width: 60px;
-  text-align: center;
 }
 .closeBtn {
   background-color: #5A0084;
+  border-color: #5A0084;
   display: flex;
   padding: 10px;
+  text-align: center;
 }
 .navUl {
   display: none;
@@ -102,7 +106,6 @@ font-family: var(--font-Brush-Script);
   justify-items: flex-end;
   padding: 30px;
   margin-bottom: auto;
-  margin-right: 50px;
 }
 .graphics {
   font-family: var(--font-Brush-Script);
@@ -149,6 +152,13 @@ padding: 20px;
   .navUl {
     display: flex;
     flex-direction: column;
+  }
+  .MyPhoto {
+    float: right;
+    justify-items: flex-end;
+    padding: 30px;
+    margin-bottom: auto;
+    margin-right: 50px;
   }
 }
 

@@ -18,7 +18,7 @@ palette: {
     },
     secondary: {
         light: '#ff7961',
-        main: '#D5BFE0',
+        main: '#5A0084',
         dark: '#ba000d',
         contrastText: '#000',
     },

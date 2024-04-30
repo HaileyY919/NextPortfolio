@@ -14,7 +14,7 @@ const Portfolio = () => {
       <div className={styles.image}>
       <Image className={styles.image}
         src={BookClub}
-        width={230}
+        width={200}
         height={330} 
         alt={'Book'}    /></div>
     <p className={styles.p}>The high school I went to does not have many clubs. My best friend decided to change that by creating a Book Club. She asked me to create a poster for her to hang around the school to advertise the club. I did not make the book club logo, but I used the logos coloring in the poster to keep the two elements cohesive.</p>

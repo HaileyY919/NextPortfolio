@@ -13,7 +13,7 @@ const Portfolio = () => {
     <>
     <Header />
     <div className={styles.body}>
-      <main>
+      <main className={styles.main}>
     <h1 className={styles.h1}>Portfolio</h1>
     <div className={styles.display}>
       <div className={styles.displayWrapper}>

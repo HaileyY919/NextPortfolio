@@ -9,6 +9,8 @@
   justify-content: center;
 }
 .h1 {
+color: black;
+background-color: #D5BFE0;
 text-align: center;
 padding: 10px;
 padding-top: 30px;
@@ -22,6 +24,8 @@ font-family: var(--font-Brush-Script);
 .p {
   text-align: center;
   padding: 20px;
+  color: #FFF7EB;
+  background-color: #D5BFE0;
 }
 .nav {
   display: flex;
@@ -45,6 +49,8 @@ font-family: var(--font-Brush-Script);
   padding: 10px;
 }
 .bpackage {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -66,6 +72,8 @@ font-family: var(--font-Brush-Script);
 
 @media(min-width:768px) {
   .bpackage {
+    color: #FFF7EB;
+    background-color: #D5BFE0;
     flex-direction: row;
     width: 100%;
   }
