@@ -20,7 +20,8 @@ export async function POST(request: Request) {
   `;
   const data = {
     to: 'haileyyoung919@gmail.com',
-    from: body.email,
+    from: 'haileyyoung919@gmail.com',
+    replyTo: body.email,
     subject: `Contact Message from ${body.name}`,
     text: message,
     html: message.replace(/\r\n/g, '<br>'),
