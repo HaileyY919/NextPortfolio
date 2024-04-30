@@ -21,12 +21,12 @@ const Portfolio = () => {
     <p className={styles.p}>Rosette Cookies are a type of cookie my grandma and I always make around Christmas. This tradition prompted me to make her a nice recipe page that we can use. I knew she would love this and when I gave it to her, she was super excited, so I am glad I took the time to do that for her. The boarder is made up of cookies, and the other elements I made are used in making the cookies.</p>
     <p className={styles.p2}>The second part to this, was to create a smaller recipe card that brings in supplies needed, and has simplified instructions I also created a mockup of what the recipe page would look like within a cook book.</p>
     <div className={styles.additionalimage}>
-    <Image
+    <Image className={styles.additionalimage}
         src={Card}
         width={360}
         height={300} 
         alt={'Golf'}    />
-    <Image 
+    <Image className={styles.additionalimage}
         src={Mockup}
         width={360}
         height={300} 

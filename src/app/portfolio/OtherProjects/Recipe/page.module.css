@@ -4,12 +4,15 @@
   display: flex;
   }
   .body {
-    color: black;
+    color: #FFF7EB;
+    background-color: #D5BFE0;
+    
     font-family: var(--font-DIN Alternate Bold);
     word-spacing: normal;
     line-height: 30px;
     }
 .h1 {
+color: black;
 text-align: center;
 padding-top: 30px;
 font-family: var(--font-Brush-Script);
@@ -47,15 +50,18 @@ font-family: var(--font-Brush-Script);
   justify-content: space-around;
 }
 .additionalimage {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 @media(max-width:768px) {
   .additionalimage {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
   }
 }

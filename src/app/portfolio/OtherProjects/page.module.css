@@ -1,10 +1,14 @@
 .h1 {
+  color: black;
   text-align: center;
   padding: 10px;
   margin-top: 30px;
   font-family: var(--font-Brush-Script);
   }
-  
+.main {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
+}
   .h2 {
   text-align: left;
   padding-left: 20px;
@@ -12,6 +16,8 @@
   }
   
   .display {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
