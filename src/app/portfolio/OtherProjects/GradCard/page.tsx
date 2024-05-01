@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Header from '@/components/global/Header';
 import GradCard from "@/assets/Graduation-Card.jpg";
-import lgrad from "@/assets/lgrad.jpg"
+import Landon from "@/assets/Landon.jpg"
 const Portfolio = () => {
   return (
     <>
@@ -21,7 +21,7 @@ const Portfolio = () => {
     <p className={styles.p2}>I also designed my boyfriend, Landon&lsquo;s Graduation Card.</p>
     <div className={styles.additionalimage}>
     <Image 
-        src={lgrad}
+        src={Landon}
         width={280}
         height={220} 
         alt={'Explore'}    /></div>
