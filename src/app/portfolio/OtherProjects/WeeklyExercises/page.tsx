@@ -11,8 +11,7 @@ const Portfolio = () => {
   return (
     <>
     <Header />
-    <div className={styles.body}>
-    <main>
+    <main className={styles.main}>
       <h1 className={styles.h1}>Illustrator Exercises</h1>
       <div className={styles.image}>
       <Image className={styles.image}
@@ -43,7 +42,6 @@ const Portfolio = () => {
         height={250} 
         alt={'Monogram'}    /></div>
     </main>
-    </div>
         </>
     );
 };
