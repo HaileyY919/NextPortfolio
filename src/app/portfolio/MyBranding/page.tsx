@@ -12,7 +12,8 @@ const Portfolio = () => {
   return (
     <>
      <Header />
-    <main>
+    <body className={styles.body}>
+    <main className={styles.main}>
     <h1 className={styles.h1}>My Business Package</h1>
     <div className={styles.bpackage}>
       <div className={styles.displayWrapper}>
@@ -43,6 +44,7 @@ const Portfolio = () => {
         </div>
       <p className={styles.p}>In creating my own business package I decided to create business cards, a letterhead, envelope, and thank you card. I wanted to create these things with common colors and design elements that related to my logo in some way. So I decided on the colors of black, white, and purple.</p>
     </main>
+    </body>
     </>
   );
 };

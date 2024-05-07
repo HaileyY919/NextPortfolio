@@ -74,5 +74,5 @@ font-family: var(--font-Brush-Script);
   display: flex;
   flex-direction: row;
   padding-top: 10px;
-  padding-left: 20px;
+  justify-content: center;
 }

@@ -3,10 +3,20 @@
   flex-direction: row;
   display: flex;
   }
+.html {
+  background-color: #D5BFE0;
+}
+.body {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
+  width: 1vh;
+}
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  color: #FFF7EB;
+  background-color: #D5BFE0;
 }
 .h1 {
 color: black;
@@ -59,6 +69,8 @@ font-family: var(--font-Brush-Script);
 }
 
 .displayWrapper {
+  color: #FFF7EB;
+  background-color: #D5BFE0;
   position: relative;
   height: 400px;
   width: 100%;
@@ -79,10 +91,14 @@ font-family: var(--font-Brush-Script);
   }
   .displayWrapper {
     width: 400px;
+    color: #FFF7EB;
+    background-color: #D5BFE0;
   }
   .main {
+    color: #FFF7EB;
+    background-color: #D5BFE0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
 }
