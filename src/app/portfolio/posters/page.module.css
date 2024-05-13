@@ -1,5 +1,4 @@
 .main {
-  color: #FFF7EB;
   background-color: #D5BFE0;
 }
 .h1 {
@@ -17,7 +16,6 @@
   }
   
   .display {
-  color: #FFF7EB;
   background-color: #D5BFE0;
   display: flex;
   flex-direction: column;

@@ -7,7 +7,6 @@ color: black;
 background-color: #D5BFE0;
 }
 .main {
-  color: #FFF7EB;
   background-color: #D5BFE0;
 }
 .h2 {
@@ -22,7 +21,6 @@ flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
 width: 100%;
-color: #FFF7EB;
 background-color: #D5BFE0;
 }
 
